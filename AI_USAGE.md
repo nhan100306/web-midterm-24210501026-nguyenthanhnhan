@@ -22,7 +22,7 @@ Sau khi AI sinh mã nguồn, em xem những nội dung đó đã đủ phù hợ
 Code AI sinh ban đầu: Đặt tên thuộc tính lưu trữ họ tên là (name).
 Lỗi phát hiện:Thẻ HTML hiển thị bảng gọi ra thuộc tính (reg.fullname), dẫn đến lệch pha dữ liệu.
 Đoạn mã em đã trực tiếp chỉnh sửa đồng bộ lại trong sự kiện submit:
-
+```javascript
 // Thay đổi thuộc tính name cũ thành fullname để khớp với hàm nạp bảng trang quản lý
 const newReg = { 
     id: Date.now(), 
@@ -32,6 +32,6 @@ const newReg = {
     studentClass, 
     event: eventSelect, 
     note 
-};
+};```
   IV: BÀI HỌC RÚT RA KHI DÙNG AI
 - Theo quan điểm của em, AI là một công cụ hỗ trợ đắc lực giúp hoàn thành một thứ gì đó rất nhanh chống nhưng khi sử dụng phải biết rà soát lại xem chạy đã đúng với ý tưởng của mình chưa và cần phải chỉnh sửa.
