@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Đăng Ký | BDU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .custom-table-card {
+            background-color: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        /* Style cho tiêu đề bảng nhẹ nhàng hơn */
+        .table thead th {
+            background-color: #f1f5f9;
+            color: #334155;
+            font-weight: 600;
+            border-bottom-width: 2px;
+        }
+    </style>
+</head>
+<body style="background-color: #f8fafc;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navy sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BDU EVENT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Chương trình</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Đăng ký</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="registrations.html">Quản lý</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h3 class="fw-bold mb-4" style="color: #2563eb;">Danh Sách Đăng Ký</h3>
+        
+        <div class="custom-table-card shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <span class="text-muted">Dữ liệu được lưu trữ tự động trên trình duyệt.</span>
+                <button id="btn-delete-all" class="btn btn-outline-danger btn-sm px-3 fw-bold">Xóa Toàn Bộ</button>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ và Tên</th>
+                            <th>Lớp</th>
+                            <th>Khóa học/Sự kiện</th>
+                            <th>SĐT</th>
+                            <th>Câu hỏi cho diễn giả</th>
+                            <th class="text-center">Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reg-table-body">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div><footer class="bg-custom-navy text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2026 BDU Ca Mau. Designed by Nhàn.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

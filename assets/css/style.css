@@ -1,0 +1,107 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f4f7f6;
+}
+
+/* Navbar đồng bộ màu với Banner */
+.bg-custom-navy {
+    background-color: #041b3d !important; /* Màu xanh đen từ banner */
+}
+
+.navbar-brand { font-weight: 800; letter-spacing: 1px; color: #fff !important;}
+
+/* --- Cập nhật: CSS cho Banner hình ảnh --- */
+.hero-image-container {
+    width: 100%;
+    background-color: #010e28; /* Trám màu nền phòng khi màn hình quá to */
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: contain; /* Giữ nguyên tỉ lệ ảnh, không bị cắt chữ */
+}
+
+/* Card danh sách hội thảo */
+.custom-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border: none; }
+.custom-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; }
+
+/* --- Cập nhật: CSS Form đăng ký nằm giữa & làm đẹp --- */
+.register-wrapper {
+    min-height: calc(100vh - 70px); /* Trừ đi chiều cao của Navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+.form-card {
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: none;
+    overflow: hidden;
+}
+
+.form-header {
+    background: linear-gradient(135deg, #041b3d 0%, #0a3a7a 100%);
+}
+
+.error-text { color: #dc3545; font-size: 0.875em; margin-top: 5px; }
+/* --- CSS cho Lịch trình Hội thảo (Timeline) --- */
+.timeline-section {
+    position: relative;
+    padding: 20px 0;
+}
+.timeline-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 4px;
+    background: #041b3d;
+    border-radius: 4px;
+}
+.timeline-item {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 4px solid #041b3d;
+    border-radius: 50%;
+    z-index: 1;
+}
+.time-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #041b3d;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.agenda-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.slogan-box {
+    background: linear-gradient(135deg, #041b3d 0%, #0a3a7a 100%);
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
