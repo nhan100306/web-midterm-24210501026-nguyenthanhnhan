@@ -33,6 +33,6 @@ const newReg = {
     event: eventSelect, 
     note 
 };
-
+```
 IV: BÀI HỌC RÚT RA KHI DÙNG AI
 - Theo quan điểm của em, AI là một công cụ hỗ trợ đắc lực giúp hoàn thành một thứ gì đó rất nhanh chống nhưng khi sử dụng phải biết rà soát lại xem chạy đã đúng với ý tưởng của mình chưa và cần phải chỉnh sửa.
